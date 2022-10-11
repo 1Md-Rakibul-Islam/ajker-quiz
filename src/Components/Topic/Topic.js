@@ -5,9 +5,7 @@ import Quiz from '../Quiz/Quiz';
 import './Topic.css';
 
 const Topic = ({topic}) => {
-
     const {id, logo, name, total} = topic
-
 
     return (
         <Col>
@@ -19,9 +17,6 @@ const Topic = ({topic}) => {
                     <p><small>Total Quiz: {total}</small></p></Card.Title>
                 </Card.Body>
                 <Card.Footer>
-                {/* <Button onClick={() => <Quiz></Quiz>} className='btn-quiz' variant="primary">
-                    Start Quiz
-                </Button> */}
                 <Link to={`/quiz/${id}`}>
                     <Button className='btn-quiz' variant="primary">Start Quiz</Button>
                 </Link>
