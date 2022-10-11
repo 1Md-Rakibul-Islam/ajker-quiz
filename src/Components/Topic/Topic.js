@@ -22,7 +22,7 @@ const Topic = ({topic}) => {
                 {/* <Button onClick={() => <Quiz></Quiz>} className='btn-quiz' variant="primary">
                     Start Quiz
                 </Button> */}
-                <Link to={"/quiz"}>
+                <Link to={`/quiz/${id}`}>
                     <Button className='btn-quiz' variant="primary">Start Quiz</Button>
                 </Link>
                 </Card.Footer>

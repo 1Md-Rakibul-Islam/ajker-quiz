@@ -5,6 +5,7 @@ import Main from './Components/Layoyut/Main';
 import Home from './Components/Home/Home';
 import Statistics from './Components/Statistics/Statistics';
 import Blog from './Components/Blog/Blog';
+import Quiz from './Components/Quiz/Quiz';
 
 function App() {
   // react router create
@@ -15,13 +16,20 @@ function App() {
         children: [
           {
             path: '/',
-            loader: () => fetch('https://openapi.programming-hero.com/api/quiz'),
+            loader: async() => fetch('https://openapi.programming-hero.com/api/quiz'),
             element: <Home></Home>
           },
           {
             path: '/home',
-            loader: () => fetch('https://openapi.programming-hero.com/api/quiz'),
+            loader: async() => fetch('https://openapi.programming-hero.com/api/quiz'),
             element: <Home></Home>
+          },
+          {
+            path: '/quiz/:quizId',
+            loader: async({params}) => {
+              return fetch(`https://openapi.programming-hero.com/api/quiz/${params.quizId}`)
+            },
+            element: <Quiz></Quiz>
           },
           {
             path: '/statistics',
