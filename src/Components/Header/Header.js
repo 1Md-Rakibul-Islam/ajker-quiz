@@ -32,6 +32,7 @@ const Header = () => {
                     <Nav.Link ><Link className='text-none' to={"/home"}>Home</Link></Nav.Link>
                     <Nav.Link ><Link className='text-none' to={"/statistics"}>Statistics</Link></Nav.Link>
                     <Nav.Link ><Link className='text-none' to={"/blog"}>Blog</Link></Nav.Link>
+                    <Link className='text-none' to={"/blog"}></Link>
 
                     {/* <Link to={"/home"}>Home</Link> 
                     <Link to={"/statistics"}>Statistics</Link> 
