@@ -1,0 +1,11 @@
+.cart-img {
+    background-color: rgba(21, 34, 69, 0.858);
+}
+
+.card-quiz:hover {
+    transform: translateY(-20px);
+}
+
+.btn-quiz:hover {
+    background-color: azure;
+}
