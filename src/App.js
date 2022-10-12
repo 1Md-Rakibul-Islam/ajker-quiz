@@ -6,6 +6,7 @@ import Home from './Components/Home/Home';
 import Statistics from './Components/Statistics/Statistics';
 import Blog from './Components/Blog/Blog';
 import Quiz from './Components/Quiz/Quiz';
+import NotDataFound from './Components/4O4/NotDataFound';
 
 function App() {
   // react router create
@@ -33,6 +34,7 @@ function App() {
           },
           {
             path: '/statistics',
+            loader: async() => fetch('https://openapi.programming-hero.com/api/quiz'),
             element: <Statistics></Statistics>
           },
           {
@@ -44,7 +46,7 @@ function App() {
       
       {
         path: '*',
-        element: <div>Page not Found</div>
+        element: <NotDataFound></NotDataFound>
       }
   ])
 
