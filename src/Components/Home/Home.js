@@ -13,7 +13,7 @@ const Home = () => {
 
     return (
         <div>
-            <h2 className='text-primary'>This is Home Page</h2>
+            <h2 className='text-primary'>Wellcome to our Quiz</h2>
             {/* <header className='banner-img'>
             </header> */}
             <h4 className='mb-5'>Quiz Topic: {topics.length}</h4>
