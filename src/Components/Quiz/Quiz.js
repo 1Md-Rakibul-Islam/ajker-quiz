@@ -6,7 +6,7 @@ import Quest from '../Question/Question';
 
 const Quiz = () => {
     const quizData = useLoaderData()
-    const {id, name, questions} = quizData.data
+    const {id, name, questions} = quizData.data;
 
     return (
         <div>
