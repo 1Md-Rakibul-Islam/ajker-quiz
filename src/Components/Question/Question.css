@@ -2,3 +2,8 @@
     cursor: pointer;
     background-color: skyblue;
 }
+
+.hidden-ans-icon {
+    width: 50px;
+    height: 28px;
+}
